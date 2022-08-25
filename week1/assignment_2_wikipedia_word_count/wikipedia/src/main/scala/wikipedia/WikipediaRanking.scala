@@ -13,7 +13,7 @@ case class WikipediaArticle(title: String, text: String):
     * @return Whether the text of this article mentions `lang` or not
     * @param lang Language to look for (e.g. "Scala")
     */
-  def mentionsLanguage(lang: String): Boolean = text.toLowerCase().split(' ').contains(lang.toLowerCase())
+  def mentionsLanguage(lang: String): Boolean = text.split(' ').contains(lang)
 
 object WikipediaRanking extends WikipediaRankingInterface:
   // Reduce Spark logging verbosity
