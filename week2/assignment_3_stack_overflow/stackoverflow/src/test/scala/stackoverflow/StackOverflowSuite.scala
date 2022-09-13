@@ -134,7 +134,6 @@ class StackOverflowSuite extends munit.FunSuite:
   }
 
   test("test toy vectorPostings") {
-    println("------------------------")
     assertSameElements(
       toyVectorPostings.collect().toList,
       List((0, 5), (500, 6), (500, 4))
